@@ -153,7 +153,7 @@ export default function App() {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/tasks/process",
+        "https://autopm-ai.onrender.com",
         { transcript }
       );
       setTasks(res.data);
